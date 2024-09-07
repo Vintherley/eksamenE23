@@ -1,0 +1,29 @@
+:root{
+    --main-color:#634B66;
+    --second-color: #7494EA;
+    --exstra-color:#C4A36E;
+    --txt-color-ligth:#FCEFF9;
+    --txt-color-dark:#000500;
+    --main-paige-color:#F0FAF1;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-paige-color);
+    box-sizing: border-box;
+}
+
+/*mobile*/
+@media screen and (min-width: 375px) {
+.cta{
+    background-color: var(--second-color);
+    color: var(--txt-color-dark);
+    text-decoration: none;
+    width: 100px; 
+    height: 20px;
+    display: block;
+    text-align: center;
+}
+}

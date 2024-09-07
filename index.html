@@ -1,25 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="den">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Website</title>
-  <link rel="stylesheet" href="vintherleyMain.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/bodyind.css">
 </head>
 <body>
 
-<nav class="navigation">
-  <a href="Vintherleystudio.html">
-    <img src="img/logo_Hvid_2.png" alt="Logo" class="logo">
-  </a>
-  <ul>
-    <li><a href="aboutme.html">About me</a></li>
-    <li><a href="products.html">Product</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-<img src="#" alt="tekst">
-<a href="products.html">Products</a>
+  <nav class="navigation">
+    <a href="index.html">
+      <img src="img/logo_Hvid_2.png" alt="Logo" class="logo">
+    </a>
+    <div class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul>
+      <li><a href="aboutme.html">Om mig</a></li>
+      <li><a href="products.html">Projekter</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+  </nav>
+  <!--main-->
+<a href="products.html"class="cta">Projekter</a>
  <!-- footer-->
 <footer class="footer">
   <div class="contact-info">
@@ -35,6 +41,13 @@
     </ul>
   </div>
 </footer>
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('.navigation');
 
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
 </body>
 </html>
